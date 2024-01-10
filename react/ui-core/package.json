@@ -1,0 +1,107 @@
+{
+  "name": "@kidsontheyard/kidsontheyard-ui-react-core",
+  "description": "Kids on the Yard design UI components for React",
+  "homepage": "https://github.com/kidsontheyard/packages/tree/main/react/ui-core",
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com:kidsontheyard/packages.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kidsontheyard/packages/issues"
+  },
+  "maintainers": [
+    {
+      "name": "Kids on the Yard",
+      "url": "https://kidsontheyard.com"
+    }],
+
+  "keywords": [
+    "react",
+    "react-component",
+    "react-components",
+    "react-library",
+    "react-ui",
+    "react-ui-components",
+    "react-ui-library",
+    "ui",
+    "ui-components",
+    "ui-library",
+    "ui-react",
+    "ui-react-components",
+    "ui-react-library",
+    "kidsontheyard",
+    "kidsontheyard-ui",
+    "kidsontheyard-ui-react",
+    "kidsontheyard-ui-react-components"
+  ],
+  "version": "0.0.2",
+  "license": "MIT",
+  "author": "Kids on the Yard (https://kidsontheyard.com)",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/kidsontheyard-ui-react-core-umd.cjs",
+  "module": "dist/kidsontheyard-ui-react-core.js",
+  "exports": {
+    ".": {
+      "import": "./dist/kidsontheyard-ui-react-core.js",
+      "require": "./dist/kidsontheyard-ui-react-core-umd.cjs"
+    }
+  },
+  "scripts": {
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "automigrate": "npx storybook@next automigrate",
+    "npm:publish": "npm login && npm init --scope=@kidsontheyard && npm publish --access public"
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwind-merge": "^2.1.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "^7.6.7",
+    "@storybook/addon-actions": "^7.6.7",
+    "@storybook/addon-docs": "^7.6.7",
+    "@storybook/addon-essentials": "^7.6.7",
+    "@storybook/addon-interactions": "^7.6.7",
+    "@storybook/addon-links": "^7.6.7",
+    "@storybook/addon-onboarding": "^1.0.10",
+    "@storybook/addon-viewport": "^7.6.7",
+    "@storybook/blocks": "^7.6.7",
+    "@storybook/jest": "^0.2.3",
+    "@storybook/react": "^7.6.7",
+    "@storybook/react-vite": "^7.6.7",
+    "@storybook/test": "^7.6.7",
+    "@storybook/testing-library": "^0.2.2",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "@vitejs/plugin-react": "^4.2.0",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.53.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.4",
+    "eslint-plugin-storybook": "^0.6.15",
+    "postcss": "^8.4.32",
+    "storybook": "^7.6.7",
+    "tailwindcss": "^3.3.6",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0",
+    "vite-plugin-dts": "^3.6.4",
+    "vite-tsconfig-paths": "^4.2.2"
+  },
+  "resolutions": {
+    "jackspeak": "^2.1.1"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  }
+}
