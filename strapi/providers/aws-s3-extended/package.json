@@ -1,0 +1,68 @@
+{
+  "name": "@kidsontheyard/provider-upload-aws-s3-extended",
+  "version": "1.0.1",
+  "description": "AWS S3 provider for strapi upload with extended functionality of organizing assets in s3 folder structure based on the time of upload",
+  "keywords": [
+    "upload",
+    "aws",
+    "s3",
+    "strapi"
+  ],
+  "homepage": "https://github.com/kidsontheyard/strapi-provider-plugin-aws-s3-extended",
+  "bugs": {
+    "url": "https://github.com/kidsontheyard/strapi-provider-plugin-aws-s3-extended/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kidsontheyard/strapi-provider-plugin-aws-s3-extended.git"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "author": {
+    "name": "Strapi Solutions SAS",
+    "email": "hi@strapi.io",
+    "url": "https://strapi.io"
+  },
+  "maintainers": [
+    {
+      "name": "Strapi Solutions SAS",
+      "email": "hi@strapi.io",
+      "url": "https://strapi.io"
+    },
+    {
+      "name": "Kids on the Yard",
+      "url": "https://kidsontheyard.com"
+    }
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "source": "./src/index.ts",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "./dist"
+  ],
+  "scripts": {
+    "build": "pack-up build",
+    "clean": "rimraf ./dist",
+    "lint": "eslint .",
+    "prepublishOnly": "yarn clean && yarn build",
+    "test:unit": "jest",
+    "test:unit:watch": "jest --watch",
+    "watch": "pack-up watch"
+  },
+  "dependencies": {
+    "aws-sdk": "2.1472.0",
+    "lodash": "4.17.21"
+  },
+  "devDependencies": {
+    "@strapi/pack-up": "workspace:*",
+    "@tsconfig/node18": "18.2.2",
+    "@types/jest": "29.5.2",
+    "eslint-config-custom": "4.15.1",
+    "rimraf": "^5.0.5",
+    "tsconfig": "4.15.1"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  }
+}
