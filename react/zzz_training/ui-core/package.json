@@ -4,16 +4,13 @@
   "homepage": "https://github.com/kidsontheyard/packages/tree/main/react/zzz_training/ui-core",
   "repository": {
     "type": "git",
-    "url": "git+git@github.com:kidsontheyard/packages.git"
+    "url": "git+ssh://git@github.com/kidsontheyard/packages.git"
   },
   "bugs": {
     "url": "https://github.com/kidsontheyard/packages/issues"
   },
   "maintainers": [
-    {
-      "name": "Kids on the Yard",
-      "url": "https://kidsontheyard.com"
-    }
+    "Kids on the Yard (https://kidsontheyard.com)"
   ],
   "keywords": [
     "react",
