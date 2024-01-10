@@ -1,7 +1,7 @@
 {
-  "name": "@kidsontheyard/kidsontheyard-ui-react-core",
-  "description": "Kids on the Yard design UI components for React",
-  "homepage": "https://github.com/kidsontheyard/packages/tree/main/react/ui-core",
+  "name": "@kidsontheyard/zzz_training-ui-react-core",
+  "description": "Traning USED only:: Design UI components for React",
+  "homepage": "https://github.com/kidsontheyard/packages/tree/main/react/zzz_training/ui-core",
   "repository": {
     "type": "git",
     "url": "git+git@github.com:kidsontheyard/packages.git"
